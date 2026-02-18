@@ -1,12 +1,15 @@
 package com.anjalipawar._7.ExpenseTracker.repository;
+
 import com.anjalipawar._7.ExpenseTracker.model.Expense;
 import org.springframework.data.jpa.repository.JpaRepository;
-
-import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
+import java.util.List;
+import java.time.LocalDate;
+
 @Repository
-//public class ExpenseRepository {
-    public interface ExpenseRepository extends JpaRepository <Expense,Long>{
+public interface ExpenseRepository extends JpaRepository<Expense, Long> {
 
-    }
+    List<Expense> findByUserId(String userId);
 
+    List<Expense> findByUserIdAndDateBetween(String userId, LocalDate start, LocalDate end);
+}

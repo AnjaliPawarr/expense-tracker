@@ -1,0 +1,17 @@
+/* Login.css के अंदर डालें */
+.logo-section {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.main-logo {
+  width: 180px; /* लॉगिन पेज पर लोगो का साइज़ */
+  height: auto;
+  /* इमेज के चारों ओर चमक (Shadow) देने के लिए */
+  filter: drop-shadow(0px 8px 15px rgba(0, 0, 0, 0.2));
+  transition: transform 0.3s ease;
+}
+
+.main-logo:hover {
+  transform: scale(1.05); /* माउस ले जाने पर थोड़ा बड़ा होगा */
+}
