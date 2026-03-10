@@ -2,7 +2,7 @@
 
 A full-stack expense tracker application built using:
 
-Frontend: React.js  
+Frontend: JavaSript,HTML , css
 Backend: Spring Boot (Java)  
 Database: MySQL  
 
